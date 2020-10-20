@@ -34,8 +34,7 @@
 This Software Requirements Specification (SRS) describes all specifications for the application "CouchPotato". It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
 
 ### 1.2 Scope
-* bullet point one:  
-text
+This software specification applies to the whole "CouchPotato" application. The app allows a group of users to select a movie or series to watch together. displaying of the actual vodeos is not part of the application scope.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 | Abbrevation | Explanation                            |
@@ -51,13 +50,14 @@ text
 
 TODO
 
-| Title                                                              | Date       | Publishing organization   |
-| -------------------------------------------------------------------|:----------:| ------------------------- |
-| [Common Playground Blog](http://commonplayground.wordpress.com)    | 18.10.2018 | Common Playground Team    |
-| [GitHub](https://github.com/nilskre/CommonPlayground)              | 18.10.2018 | Common Playground Team    |
+| Title                                                             		| Date       | Publishing organization   |
+| ------------------------------------------------------------------------------|:----------:| ------------------------- |
+| [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/) 		| 20.10.2020 | CouchPotato Team   	 |
+| [GitHub](https://github.com/CouchPotatoB4/CouchPotato)              		| 20.10.2020 | CouchPotato Team 	 |
 
 
 ### 1.5 Overview
+The following chapters are about our vision and perspective, the software requirements, the demands we have, licensing and the technical realization of this project.
     
 ## 2. Overall Description
 
@@ -66,59 +66,66 @@ TODO
 The application is is meant to help a group of people choose movies or series to watch together from an Streaming service
 
 ### 2.2 Use Case Diagram
-TODO: own use case Diagram
-![OUCD](./UseCaseDiagramCP.png)
+![OUCD](./UseCaseDiagram.jpg)
 
 ### 2.3 Technology Stack
+- C# for the Backend
+- Javascript for the frontend
 
 ## 3. Specific Requirements
 
 ### 3.1 Functionality
-
-#### 3.1.1 first Functionality
-//TODO: Link to file
-[Posting a session](./use_cases/UC1_Post_Session.md)
+#### 3.1.1 Establish Group
+[Establish Group]()
+#### 3.1.2 Invite Members
+[Invite Members]()
+#### 3.1.3 Genre Selection
+[Genre Selection]()
+#### 3.1.4 Select Movies
+[Select Movies]()
+#### 3.1.5 Final Movie
+[Final Movie]()
 
 ### 3.2 Usability
-
 #### 3.2.1 No training time needed
-
+tbd
 #### 3.2.2 Familiar Feeling
-
+tbd
 ### 3.3 Reliability
+tbd
+#### 3.3.1 Server availability
+Our own server should ensure a 95% up-time.
 
 ### 3.4 Performance
+The sending of the selected Movies from one user to the group must not guarantee real-time data transfer, because the message and files will not be displayed and watched live. Nevertheless the transfer should not take longer than 5 seconds to ensure a fast choosing times.
 
 ### 3.5 Supportability
-
+tbd
 ### 3.6 Design Constraints
-
+tbd
 ### 3.7 On-line User Documentation and Help System Requirements
-
+tbd
 ### 3.8 Purchased Components
+n/a (for now)
 
 ### 3.9 Interfaces
-
 #### 3.9.1 User Interfaces
-
+tbd
 #### 3.9.2 Hardware Interfaces
-
+tbd
 #### 3.9.3 Software Interfaces
-
+tbd
 #### 3.9.4 Communication Interfaces
-
+tbd
 ### 3.10 Licensing Requirements
-
+tbd
 ### 3.11 Legal, Copyright, and Other Notices
-
+tbd
 ### 3.12 Applicable Standards
-
+tbd
 ## 4. Supporting Information
 For any further information you can contact the CouchPotato Team or check our [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/). 
 The Team Members are:
 - Pascal Robin Simon
 - Noah Hartmann
 - Jakob Stegmüller
-
-<!-- Picture-Link definitions: -->
-[OUCD]: https://github.com/IB-KA/CommonPlayground/blob/master/UseCaseDiagramCP.png "Overall Use Case Diagram"

@@ -34,7 +34,7 @@
 This Software Requirements Specification (SRS) describes all specifications for the application "CouchPotato". It includes an overview about this project and its vision, detailed information about the planned features and boundary conditions of the development process.
 
 ### 1.2 Scope
-This software specification applies to the whole "CouchPotato" application. The app allows a group of users to select a movie or series to watch together. displaying of the actual vodeos is not part of the application scope.
+This software specification applies to the whole "CouchPotato" application. The app allows a group of users to select a movie or series to watch together. Displaying of the actual videos is not part of the application scope.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 | Abbrevation | Explanation                            |
@@ -43,12 +43,10 @@ This software specification applies to the whole "CouchPotato" application. The 
 | UC          | Use Case                               |
 | n/a         | not applicable                         |
 | tbd         | to be determined                       |
-| UCD         | overall Use Case Diagram               |
+| UCD         | Overall Use Case Diagram               |
 | FAQ         | Frequently asked Questions             |
 
 ### 1.4 References
-
-TODO
 
 | Title                                                             		| Date       | Publishing organization   |
 | ------------------------------------------------------------------------------|:----------:| ------------------------- |
@@ -63,14 +61,17 @@ The following chapters are about our vision and perspective, the software requir
 
 ### 2.1 Vision
 
-The application is is meant to help a group of people choose movies or series to watch together from an Streaming service
+We want to build a application that connects a group of friends and especially their movie preferences. A final Web-Application will provide many different movies, divided by selected genres. Every member of the party will individually vote the suggested movies as good or as bad. At the end, when the group meets up, CouchPotato will suggest a matching movie according to the individual votes of every member.
+
+The idea is to create an application, which helps a group of people to select an movie to watch, for example at a movie night, in advance.
+
 
 ### 2.2 Use Case Diagram
 ![OUCD](./UseCaseDiagram.jpg)
 
 ### 2.3 Technology Stack
 - C# for the Backend
-- Javascript for the frontend
+- HTML, CSS & JavaScript for the frontend
 
 ## 3. Specific Requirements
 

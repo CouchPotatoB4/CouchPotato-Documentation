@@ -6,7 +6,7 @@
 This use case allows an user to create an lobby, in which the user can invite other people by sharing the url of the lobby. In this lobby the genre and the movies will be selected later on. 
 
 ## 1.2 Mockup
-[![Mockup CreateLobbyButton]](Screenshots/website-homepage.PNG)
+![Mockup CreateLobbyButton](Screenshots/website-homepage.PNG)
 
 ## 1.3 Screenshot
 

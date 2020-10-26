@@ -67,7 +67,7 @@ The idea is to create an application, which helps a group of people to select an
 
 
 ### 2.2 Use Case Diagram
-![OUCD](UseCase\OverallUseCaseDiagram.jpg)
+![OUCD](UseCase/OverallUseCaseDiagram.jpg)
 
 ### 2.3 Technology Stack
 - C# for the Backend

@@ -1,4 +1,4 @@
-# Use-Case Specification: Craete Lobby
+# Use-Case Specification: Create Lobby
 
 # 1. Create Lobby
 

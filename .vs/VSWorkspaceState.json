@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pictures",
+    "\\UseCase",
+    "\\UseCase\\CreateLobby"
   ],
+  "SelectedNode": "\\Pictures",
   "PreviewInSolutionExplorer": false
 }

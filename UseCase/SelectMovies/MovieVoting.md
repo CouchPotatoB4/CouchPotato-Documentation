@@ -1,9 +1,9 @@
-# Use-Case Specification: Select Movies
+# Use-Case Specification: Movie Voting
 
-# 1. Select Movies
+# 1. Movie Voting
 
 ## 1.1 Brief Description
-This use case allows an user to create an lobby, in which the user can invite other people by sharing the url of the lobby. In this lobby the genre and the movies will be selected later on. 
+In this use-case, a user votes for movies, in order to put movies he wants to watch in a close-pitch selection. This includes a selection of specific genres.
 
 ## 1.2 Mockup
 
@@ -39,3 +39,4 @@ The main preconditions for this use case are:
  2. The lobby is not closed yet.
 
 # 5. Postconditions
+n/a

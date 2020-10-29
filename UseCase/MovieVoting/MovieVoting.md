@@ -3,7 +3,7 @@
 # 1. Movie Voting
 
 ## 1.1 Brief Description
-In this use-case, a user votes for movies, in order to put movies he wants to watch in a close-pitch selection. This includes a selection of specific genres.
+In this use-case, a user votes for movies, in order to put movies he wants to watch in a close-pitch selection. This includes a selection of specific genres. This Use-Case is a CRUD.
 
 ## 1.2 Mockup
 ![mockup-movie-voting](./Screenshots/website-movie-voting.png)

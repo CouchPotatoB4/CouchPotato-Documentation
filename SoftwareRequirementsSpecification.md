@@ -77,15 +77,15 @@ The idea is to create an application, which helps a group of people to select an
 
 ### 3.1 Functionality
 #### 3.1.1 Establish Group
-[Establish Group]()
+[Establish Group](./UseCase/CreateLobby/CreateLobby.md)
 #### 3.1.2 Invite Members
-[Invite Members]()
+tbd
 #### 3.1.3 Genre Selection
-[Genre Selection]()
+tbd
 #### 3.1.4 Select Movies
-[Select Movies]()
+[Select Movies](./UseCase/MovieVoting/MovieVoting.md)
 #### 3.1.5 Final Movie
-[Final Movie]()
+tbd
 
 ### 3.2 Usability
 #### 3.2.1 No training time needed

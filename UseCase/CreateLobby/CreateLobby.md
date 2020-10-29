@@ -22,7 +22,7 @@ This use case allows an user to create an lobby, in which the user can invite ot
 ![Activity Diagram](Screenshots/activity-diagram.PNG)
 
 ### .feature File
-![.feature file](./FeatureFiles/feature_file_manage_shopping_list.png)
+tbd
 
 
 ## 2.2 Alternative Flows
@@ -38,3 +38,4 @@ The main preconditions for this use case are:
  2. The user has friends to invite.
 
 # 5. Postconditions
+n/a

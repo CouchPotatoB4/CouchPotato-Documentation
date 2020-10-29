@@ -3,7 +3,7 @@
 # 1. Create Lobby
 
 ## 1.1 Brief Description
-This use case allows an user to create an lobby, in which the user can invite other people by sharing the url of the lobby. In this lobby the genre and the movies will be selected later on. 
+This use case allows an user to create an lobby, in which the user can invite other people by sharing the url of the lobby. In this lobby the genre and the movies will be selected later on. This Use Case is a CRUD.
 
 ## 1.2 Screenshot
 

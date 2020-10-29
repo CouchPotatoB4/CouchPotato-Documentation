@@ -6,9 +6,7 @@
 In this use-case, a user votes for movies, in order to put movies he wants to watch in a close-pitch selection. This includes a selection of specific genres.
 
 ## 1.2 Mockup
-
-
-## 1.3 Screenshot
+![mockup-movie-voting](./Screenshots/website-movie-voting.png)
 
 ### Create new lobby
 
@@ -20,10 +18,10 @@ In this use-case, a user votes for movies, in order to put movies he wants to wa
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-
+![ActivityDiagram for MovieVoting](../ActivityDiagrams/ActivityDiagram_MovieVoting.jpg)
 
 ### .feature File
-
+tbd
 
 
 ## 2.2 Alternative Flows
@@ -37,6 +35,7 @@ The main preconditions for this use case are:
 
  1. The users is a valid member of a lobby.
  2. The lobby is not closed yet.
+ 3. The user already chose a genre.
 
 # 5. Postconditions
 n/a

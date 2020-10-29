@@ -9,7 +9,6 @@ This use case allows an user to create an lobby, in which the user can invite ot
 
 ### Homepage
 ![homepage](Screenshots/website-homepage.png)
-
 ### Create new lobby
 ![Create new lobby](Screenshots/website-create-lobby.png)
 ### Empty lobby
@@ -20,7 +19,7 @@ This use case allows an user to create an lobby, in which the user can invite ot
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![Activity Diagram](../ActivityDiagrams/uc_shopping_list_activity_diagram.png)
+![Activity Diagram](Screebshots/activity-diagram.png)
 
 ### .feature File
 ![.feature file](./FeatureFiles/feature_file_manage_shopping_list.png)

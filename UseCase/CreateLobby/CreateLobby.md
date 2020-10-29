@@ -1,4 +1,4 @@
-# Use-Case Specification: Create Lobby
+# Use-Case Specification: Craete Lobby
 
 # 1. Create Lobby
 
@@ -19,7 +19,7 @@ This use case allows an user to create an lobby, in which the user can invite ot
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![Activity Diagram](Screenshots/activity-diagram.PNG)
+![Activity Diagram](Screebshots/activity-diagram.png)
 
 ### .feature File
 tbd

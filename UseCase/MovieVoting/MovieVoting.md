@@ -21,7 +21,7 @@ In this use-case, a user votes for movies, in order to put movies he wants to wa
 ![ActivityDiagram for MovieVoting](../ActivityDiagrams/ActivityDiagram_MovieVoting.jpg)
 
 ### .feature File
-tbd
+![Feature File - Movie Voting](./Screenshots/feature-file-movie-voting.png)
 
 
 ## 2.2 Alternative Flows

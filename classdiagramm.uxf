@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>408</y>
+      <w>126</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- id : UUID
+- name : String
+- swipes: int
+--
++ resetSwipes(int swipes)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>162</y>
+      <w>162</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>Lobby
+--
+- id : UUID
+- users : User[]
+- hostUser : User
+- provider : Provider
+- films : Filme[]
+- votes : boolean[][]
+- genre : String
+- swipingStarted : boolean
+--
++ Lobby(User host)
++ addUser(User user)
++ getCoverForFilm(long id) : Image
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>162</y>
+      <w>198</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Control
+--
+- lobbies : Map&lt;String, Lobby&gt;
+- id : Long {composite}
+--
++ post(String request) : Response
+- createLobby(User host) : Lobby
+- joinLobby(User user, Lobby l) : boolean
+- startSelection(Lobby l)
+- getGenre(Lobby l) : String
+- swipeGenre(Lobby l, User u, String genre)
+- getFilms(Lobby l) : Film[]
+- swipeFilm(Lobby l, User u, long filmId)
+- getCoverForFilm(Lobby l, long id) : Image
+- setLobbyConfiguration(Lobby l, Provider p, 
+         int swipes, String language)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>138</x>
+      <y>312</y>
+      <w>138</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>210.0;250.0;10.0;250.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>294</y>
+      <w>24</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>264</x>
+      <y>432</y>
+      <w>180</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>static UserFactory
+--
+
+--
+- createUser(String name) : User
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>456</y>
+      <w>114</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>222</y>
+      <w>180</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>static LobbyFactory
+--
+
+--
+- createLobby(User host) : Lobby
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>240</y>
+      <w>102</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>240</y>
+      <w>78</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>774</x>
+      <y>162</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ENUM
+Provider
+--
+- api : IApi
+--
++ Provider(IApi api)
++ getApi() : IApi
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>762</x>
+      <y>294</y>
+      <w>156</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>IApi
+--
++ getFilm() : Film
++ getFilm(String genre...) : Film[]
++ getFilm(int page) : Film[]
++ getGenre() : String[]
++ getCoverForFilm(long id) : Image</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>192</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>786</x>
+      <y>426</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Film
+--
+- id : long
+- name : String
+- description : String
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>222</y>
+      <w>24</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>378</y>
+      <w>24</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>

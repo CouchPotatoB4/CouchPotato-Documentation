@@ -5,17 +5,21 @@
     <id>UMLClass</id>
     <coordinates>
       <x>540</x>
-      <y>408</y>
+      <y>438</y>
       <w>126</w>
-      <h>72</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>User
 --
-- id : UUID
+- id : long
 - name : String
 - swipes: int
 --
-+ resetSwipes(int swipes)</panel_attributes>
++ User(long id, String name, int swipes)
++ resetSwipes(int swipes)
++ getId() : long
++ getName() : String
++ getSwipes() : int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -24,22 +28,32 @@
       <x>540</x>
       <y>162</y>
       <w>162</w>
-      <h>138</h>
+      <h>222</h>
     </coordinates>
     <panel_attributes>Lobby
 --
-- id : UUID
+- id : long
 - users : User[]
 - hostUser : User
 - provider : Provider
 - films : Filme[]
 - votes : boolean[][]
 - genre : String
-- swipingStarted : boolean
+- mode : Mode
 --
-+ Lobby(User host)
++ Lobby(User host, long id)
 + addUser(User user)
++ setConfiguration(Provider provider, int swipes)
 + getCoverForFilm(long id) : Image
++ nextMode()
+- createVoteArray()
++ isOpen() : boolean
++ getGenre() : String[]
++ getFilms() : Film[]
++ swipeGenre(long userId, String genre) 
++ swipeFilm(long userId, long filmId)
+- getUserNumberInArray(long userId) : int
++ getResult() : String
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -49,12 +63,11 @@
       <x>18</x>
       <y>162</y>
       <w>198</w>
-      <h>156</h>
+      <h>138</h>
     </coordinates>
     <panel_attributes>Control
 --
 - lobbies : Map&lt;String, Lobby&gt;
-- id : Long {composite}
 --
 + post(String request) : Response
 - createLobby(User host) : Lobby
@@ -72,57 +85,58 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>138</x>
-      <y>312</y>
-      <w>138</w>
-      <h>168</h>
+      <x>96</x>
+      <y>294</y>
+      <w>186</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 m2=1</panel_attributes>
-    <additional_attributes>210.0;250.0;10.0;250.0;10.0;10.0</additional_attributes>
+    <additional_attributes>290.0;370.0;10.0;370.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>600</x>
-      <y>294</y>
+      <y>378</y>
       <w>24</w>
-      <h>126</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=n
 m2=1</panel_attributes>
-    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>432</y>
+      <x>270</x>
+      <y>486</y>
       <w>180</w>
       <h>48</h>
     </coordinates>
     <panel_attributes>static UserFactory
 --
-
+- usedId : long[]
 --
-- createUser(String name) : User
++ build(String name) : User
+- createId() : long
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>438</x>
-      <y>456</y>
-      <w>114</w>
+      <x>444</x>
+      <y>510</y>
+      <w>108</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=n
 m2=1</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -134,9 +148,10 @@ m2=1</panel_attributes>
     </coordinates>
     <panel_attributes>static LobbyFactory
 --
-
+- usedId : long[]
 --
-- createLobby(User host) : Lobby
++ build(User host) : Lobby
+- createId() : long
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -172,10 +187,14 @@ m2=1</panel_attributes>
       <x>774</x>
       <y>162</y>
       <w>126</w>
-      <h>66</h>
+      <h>96</h>
     </coordinates>
     <panel_attributes>ENUM
 Provider
+--
+NETFLIX
+AMAZON_PRIME
+ANIFLIX
 --
 - api : IApi
 --
@@ -189,7 +208,7 @@ Provider
     <id>UMLInterface</id>
     <coordinates>
       <x>762</x>
-      <y>294</y>
+      <y>336</y>
       <w>156</w>
       <h>90</h>
     </coordinates>
@@ -219,7 +238,7 @@ m2=1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>786</x>
-      <y>426</y>
+      <y>480</y>
       <w>126</w>
       <h>54</h>
     </coordinates>
@@ -237,26 +256,56 @@ m2=1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>834</x>
-      <y>222</y>
+      <y>252</y>
       <w>24</w>
-      <h>84</h>
+      <h>102</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1
 m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>834</x>
-      <y>378</y>
+      <y>420</y>
       <w>24</w>
-      <h>60</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 m1=1
 m2=n</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>330</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ENUM
+Mode
+--
+JOIN
+GENRE_SELECTION
+FILM_SELECTION
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>354</y>
+      <w>102</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
   </element>
 </diagram>

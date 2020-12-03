@@ -11,7 +11,7 @@ This usecase describes such action, which takes place after a voting. More speci
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![ActivityDiagram for MovieVoting](../ActivityDiagrams/ActivityDiagram_NextMovie.jpg)
+![ActivityDiagram for MovieVoting](/ActivityDiagram-NextMovie-Exported.jpg)
 
 ### .feature File
 ![Feature File - Movie Voting](./Screenshots/feature-file-movie-voting.png)

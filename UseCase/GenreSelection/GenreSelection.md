@@ -7,7 +7,7 @@ This use case allows an user to select genres, the shows displayed later on will
 
 ## 1.2 Screenshot
 
-### Homepage
+### Genre Selection
 ![Genre Selection](Screenshots/website-genre-selection.png)
 
 # 2. Flow of Events
@@ -15,7 +15,7 @@ This use case allows an user to select genres, the shows displayed later on will
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![Activity Diagram](Screenshots/activity-diagram.PNG)
+![Activity Diagram](Screenshots/activity-diagram.png)
 
 ### .feature File
 ![.feature file](Screenshots/feature.png)

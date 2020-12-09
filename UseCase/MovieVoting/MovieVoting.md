@@ -8,17 +8,13 @@ In this use-case, a user votes for movies, in order to put movies he wants to wa
 ## 1.2 Mockup
 ![mockup-movie-voting](./Screenshots/website-movie-voting.png)
 
-### Create new lobby
-
-### Empty lobby
-
 
 # 2. Flow of Events
 
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![ActivityDiagram for MovieVoting](../ActivityDiagrams/ActivityDiagram_MovieVoting.jpg)
+![ActivityDiagram for MovieVoting](./Screenshots/ActivityDiagram_MovieVoting.jpg)
 
 ### .feature File
 ![Feature File - Movie Voting](./Screenshots/feature-file-movie-voting.png)

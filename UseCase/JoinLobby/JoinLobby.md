@@ -8,9 +8,9 @@ This use case allows an user to join an already created lobby. To this the User 
 ## 1.2 Screenshot
 
 ### Create new lobby
-![Join Lobby](Screenshots/website-create-lobby.png)
+![Join Lobby](Screenshots/join-lobby.PNG)
 ### Empty lobby
-![Lobby](Screenshots/website-empty-lobby.png)
+![Lobby](Screenshots/lobby.PNG)
 
 # 2. Flow of Events
 
@@ -20,7 +20,7 @@ This use case allows an user to join an already created lobby. To this the User 
 ![Activity Diagram](Screenshots/activity-diagram.png)
 
 ### .feature File
-![.feature file](Screenshots/feature.png)
+![.feature file](Screenshots/feature.PNG)
 
 
 ## 2.2 Alternative Flows

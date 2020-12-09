@@ -11,10 +11,10 @@ This usecase describes such action, which takes place after a voting. More speci
 ## 2.1 Basic Flow
 
 ### Activity Diagram
-![ActivityDiagram for MovieVoting](ActivityDiagram_NextMovie.jpg)
+![ActivityDiagram for MovieVoting](./Screenshots/ActivityDiagram_NextMovie.jpg)
 
 ### .feature File
-![Feature File - Movie Voting](./Screenshots/feature-file-movie-voting.png)
+![Feature File - Movie Voting](./Screenshots/feature-file.png)
 
 
 ## 2.2 Alternative Flows

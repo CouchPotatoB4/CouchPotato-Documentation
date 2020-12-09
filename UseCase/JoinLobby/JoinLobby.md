@@ -1,6 +1,6 @@
-# Use-Case Specification: Craete Lobby
+# Use-Case Specification: Join Lobby
 
-# 1. Create Lobby
+# 1. JoinLobby
 
 ## 1.1 Brief Description
 This use case allows an user to join an already created lobby. To this the User is allowed to gave himself an name. 

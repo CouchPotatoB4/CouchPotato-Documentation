@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\UseCase",
-    "\\UseCase\\CreateLobby",
     "\\UseCase\\MovieVoting",
-    "\\UseCase\\MovieVoting\\Feature"
+    "\\UseCase\\MovieVoting\\Feature",
+    "\\UseCase\\NextMovie",
+    "\\UseCase\\NextMovie\\Feature"
   ],
-  "SelectedNode": "\\UseCase\\MovieVoting\\Feature",
+  "SelectedNode": "\\UseCase\\NextMovie\\Feature\\NextMovie.feature",
   "PreviewInSolutionExplorer": false
 }

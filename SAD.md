@@ -21,7 +21,7 @@
     - [Layers](#82-layers)
 - [Data View](#9-data-view)
 - [Size and Performance](#10-size-and-performance)
-- [Quality](#11-quality)
+- [Quality](#11-quality-and-metrics)
 
 ## 1. Introduction
 
@@ -138,7 +138,7 @@ n/a
 ## 10. Size and Performance
 n/a
 
-## 11. Quality/Metrics
+## 11. Quality and Metrics
 The application is being measured in terms of complexity, coupling and cohesion. Due to the MVC Pattern the backend is unproblematic regarding any of these metrics. 
 But still some classes have got a medium ranking and/or grade from our grading tool Codacy.
 

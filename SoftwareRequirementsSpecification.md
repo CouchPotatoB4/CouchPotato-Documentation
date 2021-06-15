@@ -48,10 +48,17 @@ This software specification applies to the whole "CouchPotato" application. The 
 
 ### 1.4 References
 
-| Title                                                             		| Date       | Publishing organization   |
-| ------------------------------------------------------------------------------|:----------:| ------------------------- |
-| [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/) 		| 20.10.2020 | CouchPotato Team   	 |
-| [GitHub](https://github.com/CouchPotatoB4/CouchPotato)              		| 20.10.2020 | CouchPotato Team 	 |
+| Title                                                                   | Date        | Publishing organization   |
+| ------------------------------------------------------------------------|:----------: | ------------------------- |
+| [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/) 		| Oct. 2020   | CouchPotato Team          |
+| [GitHub Repositories](https://github.com/CouchPotatoB4?tab=repositories)| Oct. 2020   | CouchPotato Team        	|
+| [UC1 Creating a Lobby](./UseCase/CreateLobby/CreateLobby.md)             | Oct. 2020   | CouchPotato Team          |
+| [UC2 Join a Lobby](./UseCase/JoinLobby/JoinLobby.md)                     | Oct. 2020   | CouchPotato Team          |
+| [UC3 Select Genres](./UseCase/GenreSelection/GenreSelection.md)          | Oct. 2020   | CouchPotato Team          |
+| [UC4 Vote for Movies](./UseCase/MovieVoting/MovieVoting.md)              | Oct. 2020   | CouchPotato Team          |
+| [UC5 Request new Movie](./UseCase/NextMovie/NextMovie.md)                 | Oct. 2020   | CouchPotato Team          |
+| [Test Plan](./Testing-Plan.md)                                          | May 2021    | CouchPotato Team          |
+| [SRS](../SoftwareRequirementsSpecification.md)                          | Oct. 2020   | CouchPotato Team          |
 
 
 ### 1.5 Overview

@@ -114,7 +114,7 @@ Here is the class diagram for the back end. As the backend has no view part we o
 
 Here is the class diagram for the front end. The Frontend consists of the view, the ViewModel, and duplicated domain specific classes from the back end (model).
 
-![MVC Class Diagram Frontend](./Pictures/tbd.png)
+![MVC Class Diagram Frontend](./Architecture/MVC-diagramm.jpg)
 
 
 ## 6. Process View

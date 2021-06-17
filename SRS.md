@@ -50,15 +50,15 @@ This software specification applies to the whole "CouchPotato" application. The 
 
 | Title                                                                   | Date        | Publishing organization   |
 | ------------------------------------------------------------------------|:----------: | ------------------------- |
-| [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/) 		| Oct. 2020   | CouchPotato Team          |
+| [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/)    | Oct. 2020   | CouchPotato Team          |
 | [GitHub Repositories](https://github.com/CouchPotatoB4?tab=repositories)| Oct. 2020   | CouchPotato Team        	|
-| [UC1 Creating a Lobby](./UseCase/CreateLobby/CreateLobby.md)             | Oct. 2020   | CouchPotato Team          |
-| [UC2 Join a Lobby](./UseCase/JoinLobby/JoinLobby.md)                     | Oct. 2020   | CouchPotato Team          |
-| [UC3 Select Genres](./UseCase/GenreSelection/GenreSelection.md)          | Oct. 2020   | CouchPotato Team          |
-| [UC4 Vote for Movies](./UseCase/MovieVoting/MovieVoting.md)              | Oct. 2020   | CouchPotato Team          |
-| [UC5 Request new Movie](./UseCase/NextMovie/NextMovie.md)                 | Oct. 2020   | CouchPotato Team          |
+| [UC1 Creating a Lobby](./UseCase/CreateLobby/CreateLobby.md)            | Oct. 2020   | CouchPotato Team          |
+| [UC2 Join a Lobby](./UseCase/JoinLobby/JoinLobby.md)                    | Oct. 2020   | CouchPotato Team          |
+| [UC3 Select Genres](./UseCase/GenreSelection/GenreSelection.md)         | Oct. 2020   | CouchPotato Team          |
+| [UC4 Vote for Movies](./UseCase/MovieVoting/MovieVoting.md)             | Oct. 2020   | CouchPotato Team          |
+| [UC5 Request new Movie](./UseCase/NextMovie/NextMovie.md)               | Oct. 2020   | CouchPotato Team          |
 | [Test Plan](./Testing-Plan.md)                                          | May 2021    | CouchPotato Team          |
-| [SRS](../SoftwareRequirementsSpecification.md)                          | Oct. 2020   | CouchPotato Team          |
+| [SAD](../SAD.md)              				          | Oct. 2020   | CouchPotato Team          |
 
 
 ### 1.5 Overview
@@ -77,8 +77,9 @@ The idea is to create an application, which helps a group of people to select an
 ![OUCD](UseCase/OverallUseCaseDiagram.jpg)
 
 ### 2.3 Technology Stack
-- C# for the Backend
-- HTML, CSS & JavaScript for the frontend
+- ASP.NET Project
+ - -> C# for backend
+ - -> CSHTML, CSS, JavaScript for the fontend
 
 ## 3. Specific Requirements
 
@@ -86,9 +87,9 @@ The idea is to create an application, which helps a group of people to select an
 #### 3.1.1 Establish Group
 [Use Case - Establish Group](./UseCase/CreateLobby/CreateLobby.md)
 #### 3.1.2 Invite Members
-tbd
+[Use Case - Invite Members](./UseCase/NextMovie/NextMovie.md)
 #### 3.1.3 Genre Selection
-tbd
+[Use Case - Genre Selection](./UseCase/GenreSelection/GenreSelection.md)
 #### 3.1.4 Select Movies
 [Use Case - Select Movies](./UseCase/MovieVoting/MovieVoting.md)
 #### 3.1.5 Final Movie
@@ -118,19 +119,31 @@ n/a (for now)
 
 ### 3.9 Interfaces
 #### 3.9.1 User Interfaces
-tbd
+Our Application has the follwoing pages.
+- Homepage
+- CreateLobby page
+- JoinLobby page
+- Swipe page
+- Endpage
+
 #### 3.9.2 Hardware Interfaces
-tbd
+ASP.NET Applications can be run on Windows or Linux.
+
 #### 3.9.3 Software Interfaces
 tbd
+
 #### 3.9.4 Communication Interfaces
 tbd
+
 ### 3.10 Licensing Requirements
-tbd
+Nothing.
+
 ### 3.11 Legal, Copyright, and Other Notices
-tbd
+The Application needs an API Key from TheMovieDB.com .
+
 ### 3.12 Applicable Standards
 tbd
+
 ## 4. Supporting Information
 For any further information you can contact the CouchPotato Team or check our [CouchPotato Blog](https://couchpotato228498876.wordpress.com/home/). 
 The Team Members are:
